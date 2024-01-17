@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "judul": "Mengenal JavaScript",
+    "pengarang": "John Doe",
+    "tahun_terbit": 2020,
+    "penerbit": "Tech Books",
+    "ISBN": "1234567890"
+  },
+  {
+    "id": 2,
+    "judul": "Pemrograman Python Dasar",
+    "pengarang": "Jane Smith",
+    "tahun_terbit": 2019,
+    "penerbit": "Code Publishers",
+    "ISBN": "0987654321"
+  },
+  {
+    "id": 3,
+    "judul": "Data Science untuk Pemula",
+    "pengarang": "Alice Johnson",
+    "tahun_terbit": 2021,
+    "penerbit": "Data Insights",
+    "ISBN": "1357902468"
+  }
+]
