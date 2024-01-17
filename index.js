@@ -6,6 +6,8 @@ const app = express();
 const port = process.env.PORT || 3555;
 const books = book;
 app.use(express.json());
+app.set('view engine', 'ejs');
+app.set('views', './views');
 
 app.use((req, res, next) => {
     console.log('Time: ', Date.now());
@@ -18,6 +20,12 @@ app.use((req, res, next) => {
 
 app.get('/', (req, res) => {
     res.json('Hello World!');
+});
+app.get('/profile', (req, res) => {
+    res.render('profile', {name: 'Jhon Doe'});
+})
+app.get('/web/books', (req, res) => {
+    res.render('books', { books })
 });
 app.get('/books/:id', (req, res) => {
     res.json(books.find(book=>book.id === Number(req.params.id)));

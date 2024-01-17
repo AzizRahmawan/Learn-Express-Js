@@ -1,0 +1,14 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Buku</h1>
+        <ul>
+            <% books.forEach(function(book){ %>
+                <li>
+                    <div>Judul: <%= book.judul %></div>
+                    <div>Author: <%= book.pengarang %></div>
+                </li>
+            <% }); %>
+        </ul>
+    </body>
+</html>
