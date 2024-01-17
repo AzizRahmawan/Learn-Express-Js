@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
     res.json('Hello World!');
 });
 app.get('/books/:id', (req, res) => {
-    res.json(books.filter(book=>book.id === Number(req.params.id)))
+    res.json(books.find(book=>book.id === Number(req.params.id)));
 });
 app.get('/books', (req, res) => {
     const query = req.query.search;
